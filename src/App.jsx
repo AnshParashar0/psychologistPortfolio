@@ -43,7 +43,7 @@ const TOTAL_FRAMES = 97
 
 function getFrameSrc(index) {
   const num = String(Math.min(Math.max(index, 1), TOTAL_FRAMES)).padStart(3, '0')
-  return `/frames/frame_${num}.jpg`
+  return `${import.meta.env.BASE_URL}frames/frame_${num}.jpg`
 }
 
 function BackgroundFrames() {
